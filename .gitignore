@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+
+# アプリ設定(ユーザー環境依存)
+.jdf_editor/
+
+# エディタ
+.vscode/
+.idea/

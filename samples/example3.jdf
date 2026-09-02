@@ -1,0 +1,278 @@
+;NH24G_DB01_1.STR LZF18AZ01.JDF
+;--------------------------------------------------
+;EB#910
+;--------------------------------------------------
+;[DOSE] -%                              @2026/07/21
+;[PITCH]                                @2026/07/21
+;Created by Nakatani                    @2026/07/21
+;Renewal AFM-Layer,size & MODULAT       @2022/9/12
+;--------------------------------------------------
+JOB/W ,3,0
+;GLOBAL MARK
+GLMPOS P=(-27650,-2850),Q=(27600,-2850),R=(-14650,21150),S=(-14650,-26850)
+GLMP    3,500
+PATH PITCH
+;SHOT MAP===============================================
+;MARK
+ARRAY (-27625,18,3250)/(24000,7,8000)           ;M
+        ASSIGN P(1)-> ((1,4),S11M)
+        ASSIGN P(1)-> ((5,1),S11M)
+        ASSIGN P(1)-> ((5,7),S11M)
+        ASSIGN P(1)-> ((14,1),S11M)
+        ASSIGN P(1)-> ((14,7),S11M)
+        ASSIGN P(1)-> ((18,4),S11M)
+AEND
+ARRAY (-27650,18,3250)/(24180,7,8000)           ;AFM_Y
+        ASSIGN P(2)-> ((7,6),S11A)
+AEND
+;CHIP
+ARRAY (-27625,18,3250)/(24000,7,8000)
+        ASSIGN A(1) -> ((3,3),S12)              ;A2
+        ASSIGN A(1) -> ((8,6),S12)              ;A2
+        ASSIGN A(1) -> ((13,2),S12)             ;A2
+        ASSIGN A(1) -> ((13,4),S12)             ;A2
+       ASSIGN   A(2) -> ((4,3),S12)             ;B2
+       ASSIGN   A(2) -> ((9,6),S12)             ;B2
+       ASSIGN   A(2) -> ((14,2),S12)            ;B2
+       ASSIGN   A(2) -> ((14,4),S12)            ;B2
+       ASSIGN   A(3) -> ((5,3),S12)             ;C2
+       ASSIGN   A(3) -> ((10,6),S12)            ;C2
+       ASSIGN   A(3) -> ((15,2),S12)            ;C2
+       ASSIGN   A(3) -> ((15,4),S12)            ;C2
+       ASSIGN   A(4) -> ((6,3),S12)             ;D2
+       ASSIGN   A(4) -> ((11,6),S12)            ;D2
+       ASSIGN   A(4) -> ((16,2),S12)            ;D2
+       ASSIGN   A(4) -> ((16,4),S12)            ;D2
+       ASSIGN   A(5) -> ((3,2),S13)             ;A3
+       ASSIGN   A(5) -> ((3,5),S13)             ;A3
+       ASSIGN   A(5) -> ((8,1),S13)             ;A3
+       ASSIGN   A(5) -> ((8,3-5),S13)           ;A3
+       ASSIGN   A(5) -> ((8,7),S13)             ;A3
+       ASSIGN   A(5) -> ((13,3),S13)            ;A3
+       ASSIGN   A(5) -> ((13,6),S13)            ;A3
+       ASSIGN   A(6) -> ((4,2),S13)             ;B3
+       ASSIGN   A(6) -> ((4,5),S13)             ;B3
+       ASSIGN   A(6) -> ((9,1),S13)             ;B3
+       ASSIGN   A(6) -> ((9,3-5),S13)          ;B3
+       ASSIGN   A(6) -> ((9,7),S13)            ;B3
+       ASSIGN   A(6) -> ((14,3),S13)           ;B3
+       ASSIGN   A(6) -> ((14,6),S13)           ;B3
+       ASSIGN   A(7) -> ((5,2),S13)            ;C3
+       ASSIGN   A(7) -> ((5,5),S13)            ;C3
+       ASSIGN   A(7) -> ((10,1),S13)           ;C3
+       ASSIGN   A(7) -> ((10,3-5),S13)         ;C3
+       ASSIGN   A(7) -> ((10,7),S13)           ;C3
+       ASSIGN   A(7) -> ((15,3),S13)           ;C3
+       ASSIGN   A(7) -> ((15,6),S13)           ;C3
+       ASSIGN   A(8) -> ((6,2),S13)            ;D3
+       ASSIGN   A(8) -> ((6,5),S13)            ;D3
+       ASSIGN   A(8) -> ((11,1),S13)           ;D3
+       ASSIGN   A(8) -> ((11,3-5),S13)         ;D3
+       ASSIGN   A(8) -> ((11,7),S13)           ;D3
+       ASSIGN   A(8) -> ((16,3),S13)           ;D3
+       ASSIGN   A(8) -> ((16,6),S13)           ;D3
+       ASSIGN   A(9) -> ((3,4),S14)            ;A4
+       ASSIGN   A(9) -> ((3,6),S14)            ;A4
+       ASSIGN   A(9) -> ((8,2),S14)            ;A4
+       ASSIGN   A(9) -> ((13,5),S14)           ;A4
+       ASSIGN   A(10) -> ((4,4),S14)           ;B4
+       ASSIGN   A(10) -> ((4,6),S14)           ;B4
+       ASSIGN   A(10) -> ((9,2),S14)           ;B4
+       ASSIGN   A(10) -> ((14,5),S14)          ;B4
+       ASSIGN   A(11) -> ((5,4),S14)           ;C4
+       ASSIGN   A(11) -> ((5,6),S14)           ;C4
+       ASSIGN   A(11) -> ((10,2),S14)          ;C4
+       ASSIGN   A(11) -> ((15,5),S14)          ;C4
+       ASSIGN   A(12) -> ((6,4),S14)           ;D4
+       ASSIGN   A(12) -> ((6,6),S14)           ;D4
+       ASSIGN   A(12) -> ((11,2),S14)          ;D4
+       ASSIGN   A(12) -> ((16,5),S14)          ;D4
+       ASSIGN   A(13) -> ((7,3),S13)           ;E3
+       ASSIGN   A(13) -> ((7,7),S13)           ;E3
+       ASSIGN   A(14) -> ((7,6),S15)           ;L21
+AEND
+;PATTERN ARRAY===========================================
+1: ARRAY (0,1,3250)/(3200,5,1600)       ;A2
+        ASSIGN P(3) -> (1,1-2)
+        ASSIGN P(4) -> (1,3)
+        ASSIGN P(3) -> (1,4-5)
+        AEND
+2: ARRAY (0,1,3250)/(3200,5,1600)       ;B2
+        ASSIGN P(5) -> (1,1-2)
+        ASSIGN P(6) -> (1,3)
+        ASSIGN P(5) -> (1,4-5)
+        AEND
+3: ARRAY (0,1,3250)/(3200,5,1600)       ;C2
+        ASSIGN P(7) -> (1,1-2)
+        ASSIGN P(8) -> (1,3)
+        ASSIGN P(7) -> (1,4-5)
+        AEND
+4: ARRAY (0,1,3250)/(3200,5,1600)       ;D2
+        ASSIGN P(9) -> (1,1-2)
+        ASSIGN P(10) -> (1,3)
+        ASSIGN P(9) -> (1,4-5)
+        AEND
+5: ARRAY (0,1,3250)/(3200,5,1600)         ;A3
+        ASSIGN P(11) -> (1,1-2)
+        ASSIGN P(12) -> (1,3)
+        ASSIGN P(11) -> (1,4-5)
+        AEND
+6: ARRAY (0,1,3250)/(3200,5,1600)         ;B3
+        ASSIGN P(13) -> (1,1-2)
+        ASSIGN P(14) -> (1,3)
+        ASSIGN P(13) -> (1,4-5)
+        AEND
+7: ARRAY (0,1,3250)/(3200,5,1600)         ;C3
+        ASSIGN P(15) -> (1,1-2)
+        ASSIGN P(16) -> (1,3)
+        ASSIGN P(15) -> (1,4-5)
+        AEND
+8: ARRAY (0,1,3250)/(3200,5,1600)         ;D3
+        ASSIGN P(17) -> (1,1-2)
+        ASSIGN P(18) -> (1,3)
+        ASSIGN P(17) -> (1,4-5)
+        AEND
+9: ARRAY (0,1,3250)/(3200,5,1600)         ;A4
+        ASSIGN P(19) -> (1,1-2)
+        ASSIGN P(20) -> (1,3)
+        ASSIGN P(19) -> (1,4-5)
+        AEND
+10: ARRAY (0,1,3250)/(3200,5,1600)        ;B4
+        ASSIGN P(21) -> (1,1-2)
+        ASSIGN P(22) -> (1,3)
+        ASSIGN P(21) -> (1,4-5)
+        AEND
+11: ARRAY (0,1,3250)/(3200,5,1600)        ;C4
+        ASSIGN P(23) -> (1,1-2)
+        ASSIGN P(24) -> (1,3)
+        ASSIGN P(23) -> (1,4-5)
+        AEND
+12: ARRAY (0,1,3250)/(3200,5,1600)        ;D4
+        ASSIGN P(25) -> (1,1-2)
+        ASSIGN P(26) -> (1,3)
+        ASSIGN P(25) -> (1,4-5)
+        AEND
+13: ARRAY (0,1,3250)/(3200,5,1600)        ;E3
+        ASSIGN P(27) -> (1,1-5)
+        AEND
+14: ARRAY (0,1,3250)/(3200,5,1600)        ;L21
+        ASSIGN P(28) -> (1,1-5)
+        AEND
+;========================================================
+PEND
+;***   DIRECT/GLOGAL EXPOSURE ***
+;MARK
+LAYER 1
+P(1) 'NH24G_M1.v30'                 ; M
+P(2) 'AFM_MARK3.v30'             ; Y
+EOS     2,'optstd3i'
+SHOT A,40                        ; EB910_Shot Time , Np (Point)
+RESIST 50,100                    ;
+STDCUR 7.55                      ; Ip(nA) for 8100
+S11M: MODULAT((0,-40))
+S11A: MODULAT((0,-20))
+S12: MODULAT((0,1))
+S13: MODULAT((0,2))
+S14: MODULAT((0,2))
+S15: MODULAT((0,-9))
+LAYER 2
+SCALE 1,1.0132
+P(3) 'LZF18AZ01_500A.v30'                ;A2
+        SPPRM 16.0,,,,,1
+P(4) 'LZF18AZ01_500A_DD4.v30'            ;A2
+        SPPRM 16.0,,,,,1
+P(5) 'LZF18AZ01_500B.v30'                ;B2
+        SPPRM 16.0,,,,,1
+P(6) 'LZF18AZ01_500B_DD4.v30'            ;B2
+        SPPRM 16.0,,,,,1
+P(7) 'LZF18AZ01_500C.v30'                ;C2
+        SPPRM 16.0,,,,,1
+P(8) 'LZF18AZ01_500C_DD4.v30'            ;C2
+        SPPRM 16.0,,,,,1
+P(9) 'LZF18AZ01_500D.v30'                ;D2
+        SPPRM 16.0,,,,,1
+P(10) 'LZF18AZ01_500D_DD4.v30'           ;D2
+        SPPRM 16.0,,,,,1
+EOS     2,'optstd3i'
+SHOT A,16                        ; EB910_Shot Time , Np (Point)
+RESIST 100,100                   ;
+STDCUR 7.55                      ; Ip(nA) for 8100
+S11M: MODULAT((0,-40))
+S11A: MODULAT((0,-20))
+S12: MODULAT((0,1))
+S13: MODULAT((0,2))
+S14: MODULAT((0,2))
+S15: MODULAT((0,-9))
+LAYER 3
+SCALE 1,1.0174
+P(11) 'LZF18AZ01_500A.v30'               ;A3
+        SPPRM 16.0,,,,,1
+P(12) 'LZF18AZ01_500A_DD4.v30'           ;A3
+        SPPRM 16.0,,,,,1
+P(13) 'LZF18AZ01_500B.v30'               ;B3
+        SPPRM 16.0,,,,,1
+P(14) 'LZF18AZ01_500B_DD4.v30'           ;B3
+        SPPRM 16.0,,,,,1
+P(15) 'LZF18AZ01_500C.v30'               ;C3
+        SPPRM 16.0,,,,,1
+P(16) 'LZF18AZ01_500C_DD4.v30'           ;C3
+        SPPRM 16.0,,,,,1
+P(17) 'LZF18AZ01_500D.v30'               ;D3
+        SPPRM 16.0,,,,,1
+P(18) 'LZF18AZ01_500D_DD4.v30'           ;D3
+        SPPRM 16.0,,,,,1
+P(27) 'LZF18AZ01_EDGE.v30'               ;E3
+        SPPRM 16.0,,,,,1
+EOS    2,'optstd3i'
+SHOT A,16                        ; EB910_Shot Time , Np (Point)
+RESIST 100,100                   ;
+STDCUR 7.55                      ; Ip(nA) for 8100
+S11M: MODULAT((0,-40))
+S11A: MODULAT((0,-20))
+S12: MODULAT((0,1))
+S13: MODULAT((0,2))
+S14: MODULAT((0,2))
+S15: MODULAT((0,-9))
+LAYER 4
+SCALE 1,1.0217
+P(19) 'LZF18AZ01_500A.v30'               ;A4
+        SPPRM 16.0,,,,,1
+P(20) 'LZF18AZ01_500A_DD4.v30'           ;A4
+        SPPRM 16.0,,,,,1
+P(21) 'LZF18AZ01_500B.v30'               ;B4
+        SPPRM 16.0,,,,,1
+P(22) 'LZF18AZ01_500B_DD4.v30'           ;B4
+        SPPRM 16.0,,,,,1
+P(23) 'LZF18AZ01_500C.v30'               ;C4
+        SPPRM 16.0,,,,,1
+P(24) 'LZF18AZ01_500C_DD4.v30'           ;C4
+        SPPRM 16.0,,,,,1
+P(25) 'LZF18AZ01_500D.v30'               ;D4
+        SPPRM 16.0,,,,,1
+P(26) 'LZF18AZ01_500D_DD4.v30'           ;D4
+        SPPRM 16.0,,,,,1
+EOS     2,'optstd3i'
+SHOT A,16                        ; EB910_Shot Time , Np (Point)
+RESIST 100,100                   ;
+STDCUR 7.55                      ; Ip(nA) for 8100
+S11M: MODULAT((0,-40))
+S11A: MODULAT((0,-20))
+S12: MODULAT((0,1))
+S13: MODULAT((0,2))
+S14: MODULAT((0,2))
+S15: MODULAT((0,-9))
+LAYER 5
+P(28) 'LZF18AZ01_AFM.v30'                ;L21_AFM
+        SPPRM 16.0,,,,,1
+EOS     2,'optstd3i'
+SHOT A,16                        ; EB910_Shot Time , Np (Point)
+RESIST 100,100                   ;
+STDCUR 7.55                      ; Ip(nA) for 8100
+S11M: MODULAT((0,-40))
+S11A: MODULAT((0,-20))
+S12: MODULAT((0,1))
+S13: MODULAT((0,2))
+S14: MODULAT((0,2))
+S15: MODULAT((0,-9))
+END
+
